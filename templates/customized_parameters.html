@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customized_Model</title>
+</head>
+<body>
+    <h1>AI Model Result</h1>
+    <p>Accuracy: {{accuracy}}</p>
+
+    <h2>Stat Images</h2>
+    {% for filename in stat_image_filenames %}
+        <img src="{{ url_for('static', filename='img/stat/' + filename) }}" alt="Image">
+    {% endfor %}
+
+    <h2>Wordcloud Images</h2>
+    {% for filename in wordcloud_image_filenames %}
+        <img src="{{ url_for('static', filename='img/wordcloud/' + filename) }}" alt="Image">
+    {% endfor %}
+</body>
+</html>

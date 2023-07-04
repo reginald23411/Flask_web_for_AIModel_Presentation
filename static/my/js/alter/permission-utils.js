@@ -1,0 +1,6 @@
+function PermissionUtils () {
+
+}
+PermissionUtils.prototype = {
+    
+}

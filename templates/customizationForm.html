@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data select form</title>
+</head>
+<body>
+      <form action="/customized_parameters" method="post">
+      <h2>Please select parameters for model training </h2>
+      <br>
+      {% for i in all_columns %}
+        <input type="checkbox" name="selected_columns" value="{{i}}">{{i}}
+      {% endfor %}
+      <button type="submit">submit</button>
+</body>
+</html>

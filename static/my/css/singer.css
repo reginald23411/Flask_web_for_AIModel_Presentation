@@ -1,0 +1,243 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  background-image: url("/static/img/backgroundPage.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+/* header */
+header {
+  background-color: deeppink;
+  color: #fff;
+  padding: 16px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: inherit;
+}
+
+header img{
+  height: 40px;
+  width: auto;
+  float: left;
+}
+
+header a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* 详细资料样式 */
+  .bio {
+    max-width: 962px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*
+            max-width: 962px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    */
+  }
+  
+  .bio img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .bio h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  .bio p {
+    font-size: 18px;
+   margin: 0 0 20px 0;
+  }
+  
+  .bio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bio li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .bio li strong {
+    font-weight: bold;
+  }
+  
+  .button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .button:hover{
+    color: #fff;
+    background-color: deeppink;
+    text-decoration: none;
+  }
+  
+  /* 弹出式窗口样式 */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .popup h3 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  
+  .popup p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .popup button:hover {
+    background-color: red;
+  }
+
+
+/* 主要内容区域 */
+main {
+  max-width: 962px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* album */
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.album {
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8; /* Updated background color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.album h3 {
+  font-size: 30px;
+  margin-bottom:25px;
+  word-wrap: break-word;
+}
+
+.album p {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+/*album button*/
+.album .albumButton{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 167.8px;
+  height: 44px;
+  text-align: center;
+  position: static;
+}
+.album .albumButton:hover{
+  color: #fff;
+  background-color: deeppink;
+  text-decoration: none;
+}
+/* footer */
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: deeppink;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+}

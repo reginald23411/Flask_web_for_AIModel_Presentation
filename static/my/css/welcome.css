@@ -1,0 +1,118 @@
+div,h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1vw;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    background-image: url("./img/carouselImg/backgroundPage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    font-family: "M PLUS 1p";
+    font-weight: 400;
+    color: #274299;
+}
+main {
+    display: block;
+    font-family: "M PLUS 1p";
+    font-weight: 400;
+    color: black;
+}
+.intro {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.intro .frame {
+    position: absolute;
+    border: solid #80d3dd 20px;
+    height: 1000px;
+    width: 870px;
+    margin: 0 auto;
+    top: -130px;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: -1;
+}
+div {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.intro img.top-nanahira {
+    position: absolute;
+    top: 85px;
+    left: -150px;
+    z-index: 2;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    overflow-clip-margin: content-box;
+}
+.intro img.top-caster {
+    position: absolute;
+    bottom: -45px;
+    right: 59px;
+    z-index: 3;
+}
+.intro img.top-catch {
+    position: absolute;
+    width: 62%;
+    bottom: 0;
+    left: 20px;
+    z-index: 3;
+}
+.intro .intro-text {
+    text-align: right;
+    font-weight: 300;
+    transform: rotate(-0.5deg);
+}
+.intro .intro-text .space {
+    font-size: 35px;
+}
+.intro img.logo {
+    position: relative;
+    text-align: center;
+    mix-blend-mode: multiply;
+    z-index: 10;
+}
+.intro .intro-text .space {
+    font-size: 35px;
+}
+.intro .intro-text .space span.bold {
+    font-weight: 900;
+    font-size: 1vw;
+}
+
+.intro .intro-text .space span {
+    background: deeppink;
+}
+.intro .intro-text .space span.circle {
+    letter-spacing: 2px;
+}
+.intro .intro-text p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.intro .intro-text p span {
+    background: linear-gradient(transparent 70%, #ffff21 0%);
+}

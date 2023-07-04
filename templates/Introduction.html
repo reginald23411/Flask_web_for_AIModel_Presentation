@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+     <link rel="stylesheet" type="text/css" href="../static/my/css/projectContent.css">
+</head>
+<body>
+
+    <div class="content">
+
+        <div class="main">
+            <h2 id="project-objective">Project Objective</h2>
+            <p>Apply what we have learned in class to build a data model that can handle data collection, cleaning, and classification of job advertisements.</p>
+
+            <h2 id="project-background">Project Background</h2>
+            <p>VTC conducts a regular manpower survey every four years, collecting information on the number of employees, income, education, etc. The project aims to assist the Government in developing industry manpower and training programs.</p>
+
+            <h2 id="business-requirement">Business Requirement</h2>
+            <p>We were asked to retrieve, clean, and classify 4 million unstructured job advertisements growing 100k to 150k per month into corresponding Principal Job Titles. The objective is to improve the efficiency and accuracy of job advertisement classification and enhance the operational efficiency of the manpower survey conducted by VTC HQIP, including enhanced data collection, cleaning, modeling, and classification of job advertisements.</p>
+
+            <h2 id="prediction-model">Prediction Model: Random Forest</h2>
+            <ol>
+                <li>Use the attributes (sales) to predict the class (error).</li>
+                <li>A root node is the topmost decision node in a tree, usually the best predictor.</li>
+                <li>An internal node is a test on an attribute. At each node, one attribute is chosen to split training examples into distinct classes as much as possible.</li>
+                <li>A branch represents an outcome of the test, e.g., color=red.</li>
+                <li>A leaf node represents a class label or class label distribution.</li>
+            </ol>
+
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Inexpensive to construct</li>
+                <li>Extremely fast to use</li>
+                <li>Easy to interpret for small-sized trees</li>
+                <li>Accuracy comparable to other classification techniques for many simple data sets</li>
+            </ul>
+
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Easy to overfit</li>
+                <li>Decision boundary restricted to being parallel to attribute axes</li>
+                <li>Large tree is difficult to interpret</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

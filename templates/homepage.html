@@ -1,0 +1,91 @@
+ <html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="../static/my/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../static/xadmin/lib/layui/css/layui.css">
+
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo layui-hide-xs layui-bg-black">DSA1A Group 8</div>
+
+        <ul class="layui-nav layui-layout-left">
+
+            <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+                <i class="layui-icon layui-icon-spread-left"></i>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <li class="layui-nav-item layui-hide-xs layui-this"><a href="/welcome" target="myiframe">Welcome</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">Project Detail</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/Introduction" target="myiframe">Introduction</a></dd>
+                        <dd><a href="/Data_Analysis" target="myiframe">Data Analysis</a></dd>
+                        <dd><a href="/Findings_and_Evaluation" target="myiframe">Findings and Evaluation</a></dd>
+                        <dd><a href="/Conclusion" target="myiframe">Conclusion</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">Data Modelling</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/excel_table" target="myiframe">Cleaned Data</a></dd>
+                        <dd><a href="/default_parameters" target="myiframe">Default Parameters</a></dd>
+                        <dd><a href="/form" target="myiframe">Customized Parameters</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+
+        <iframe src="" name="myiframe" height="100%" width="100%"></iframe>
+    </div>
+
+    <div class="layui-footer">
+
+        @copyright by CHAN Ka Keung,YEUNG Kai Chun,WU Yuen chun,NG Hon Hin (DSA1A Group8)
+    </div>
+</div>
+<script src="../static/xadmin/js/layui.all.js"></script>
+<script>
+
+    layui.use(['element', 'layer', 'util'], function(){
+        var element = layui.element
+            ,layer = layui.layer
+            ,util = layui.util
+            ,$ = layui.$;
+
+        util.event('lay-header-event', {
+
+            menuLeft: function(othis){
+                layer.msg('', {icon: 0});
+            }
+            ,menuRight: function(){
+                layer.open({
+                    type: 1
+                    ,content: '<div style="padding: 15px;">handler</div>'
+                    ,area: ['260px', '100%']
+                    ,offset: 'rt'
+                    ,anim: 5
+                    ,shadeClose: true
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
